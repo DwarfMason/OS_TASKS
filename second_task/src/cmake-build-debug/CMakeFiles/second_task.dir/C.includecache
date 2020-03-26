@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dwarf/Документы/OS_TASKS/second_task/src/1.c
+stdio.h
+/home/dwarf/Документы/OS_TASKS/second_task/src/stdio.h
+stdlib.h
+-
+zconf.h
+-
+
