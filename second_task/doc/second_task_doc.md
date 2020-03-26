@@ -1,14 +1,14 @@
 # Лабораторная работа №2. Управление процессами
 
+```sh
 
 second_task/src/<nubmer of the subtask>.c #Исходник
- 
+
 make second_task/src/cmake-build-debug/ #Компиляция исходников
 
-second_task/src/cmake-build-debug/ #Путь до исходного файла 
-..
+second_task/src/cmake-build-debug/ #Путь до исходного файла
 
-
+```
 
 #### Подзадание 1: 
 
