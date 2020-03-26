@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/dwarf/Документы/OS_TASKS/second_task/src/cmake
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/dwarf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.6911.21/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/dwarf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.6911.21/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named 3
+
+# Build rule for target.
+3 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 3
+.PHONY : 3
+
+# fast build rule for target.
+3/fast:
+	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/build
+.PHONY : 3/fast
+
+#=============================================================================
 # Target rules for targets named 1
 
 # Build rule for target.
@@ -122,6 +135,19 @@ depend:
 1/fast:
 	$(MAKE) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/build
 .PHONY : 1/fast
+
+#=============================================================================
+# Target rules for targets named 2
+
+# Build rule for target.
+2 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2
+.PHONY : 2
+
+# fast build rule for target.
+2/fast:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/build
+.PHONY : 2/fast
 
 1.o: 1.c.o
 
@@ -150,18 +176,80 @@ depend:
 	$(MAKE) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/1.c.s
 .PHONY : 1.c.s
 
+2.o: 2.c.o
+
+.PHONY : 2.o
+
+# target to build an object file
+2.c.o:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/2.c.o
+.PHONY : 2.c.o
+
+2.i: 2.c.i
+
+.PHONY : 2.i
+
+# target to preprocess a source file
+2.c.i:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/2.c.i
+.PHONY : 2.c.i
+
+2.s: 2.c.s
+
+.PHONY : 2.s
+
+# target to generate assembly for a file
+2.c.s:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/2.c.s
+.PHONY : 2.c.s
+
+3.o: 3.c.o
+
+.PHONY : 3.o
+
+# target to build an object file
+3.c.o:
+	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/3.c.o
+.PHONY : 3.c.o
+
+3.i: 3.c.i
+
+.PHONY : 3.i
+
+# target to preprocess a source file
+3.c.i:
+	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/3.c.i
+.PHONY : 3.c.i
+
+3.s: 3.c.s
+
+.PHONY : 3.s
+
+# target to generate assembly for a file
+3.c.s:
+	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/3.c.s
+.PHONY : 3.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... 1"
+	@echo "... 3"
 	@echo "... edit_cache"
+	@echo "... 1"
+	@echo "... rebuild_cache"
+	@echo "... 2"
 	@echo "... 1.o"
 	@echo "... 1.i"
 	@echo "... 1.s"
+	@echo "... 2.o"
+	@echo "... 2.i"
+	@echo "... 2.s"
+	@echo "... 3.o"
+	@echo "... 3.i"
+	@echo "... 3.s"
 .PHONY : help
 
 

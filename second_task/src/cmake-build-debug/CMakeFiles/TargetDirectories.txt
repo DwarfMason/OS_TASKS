@@ -1,3 +1,5 @@
-/home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles/1.dir
+/home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles/3.dir
 /home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles/1.dir
+/home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles/2.dir
