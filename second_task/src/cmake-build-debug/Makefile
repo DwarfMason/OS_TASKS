@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named 4
+
+# Build rule for target.
+4 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 4
+.PHONY : 4
+
+# fast build rule for target.
+4/fast:
+	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/build
+.PHONY : 4/fast
+
+#=============================================================================
 # Target rules for targets named 3
 
 # Build rule for target.
@@ -230,12 +243,40 @@ depend:
 	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/3.c.s
 .PHONY : 3.c.s
 
+4.o: 4.c.o
+
+.PHONY : 4.o
+
+# target to build an object file
+4.c.o:
+	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/4.c.o
+.PHONY : 4.c.o
+
+4.i: 4.c.i
+
+.PHONY : 4.i
+
+# target to preprocess a source file
+4.c.i:
+	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/4.c.i
+.PHONY : 4.c.i
+
+4.s: 4.c.s
+
+.PHONY : 4.s
+
+# target to generate assembly for a file
+4.c.s:
+	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/4.c.s
+.PHONY : 4.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... 4"
 	@echo "... 3"
 	@echo "... edit_cache"
 	@echo "... 1"
@@ -250,6 +291,9 @@ help:
 	@echo "... 3.o"
 	@echo "... 3.i"
 	@echo "... 3.s"
+	@echo "... 4.o"
+	@echo "... 4.i"
+	@echo "... 4.s"
 .PHONY : help
 
 
