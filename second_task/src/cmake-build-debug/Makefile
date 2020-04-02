@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/dwarf/Документы/OS_TASKS/second_task/src/cmake
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/dwarf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.6911.21/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/dwarf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.6911.21/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,30 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named 4
+# Target rules for targets named 2
 
 # Build rule for target.
-4 : cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 4
-.PHONY : 4
+2 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2
+.PHONY : 2
 
 # fast build rule for target.
-4/fast:
-	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/build
-.PHONY : 4/fast
-
-#=============================================================================
-# Target rules for targets named 3
-
-# Build rule for target.
-3 : cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 3
-.PHONY : 3
-
-# fast build rule for target.
-3/fast:
-	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/build
-.PHONY : 3/fast
+2/fast:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/build
+.PHONY : 2/fast
 
 #=============================================================================
 # Target rules for targets named 1
@@ -150,17 +137,56 @@ depend:
 .PHONY : 1/fast
 
 #=============================================================================
-# Target rules for targets named 2
+# Target rules for targets named 5
 
 # Build rule for target.
-2 : cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 2
-.PHONY : 2
+5 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 5
+.PHONY : 5
 
 # fast build rule for target.
-2/fast:
-	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/build
-.PHONY : 2/fast
+5/fast:
+	$(MAKE) -f CMakeFiles/5.dir/build.make CMakeFiles/5.dir/build
+.PHONY : 5/fast
+
+#=============================================================================
+# Target rules for targets named 3
+
+# Build rule for target.
+3 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 3
+.PHONY : 3
+
+# fast build rule for target.
+3/fast:
+	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/build
+.PHONY : 3/fast
+
+#=============================================================================
+# Target rules for targets named 4
+
+# Build rule for target.
+4 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 4
+.PHONY : 4
+
+# fast build rule for target.
+4/fast:
+	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/build
+.PHONY : 4/fast
+
+#=============================================================================
+# Target rules for targets named 6
+
+# Build rule for target.
+6 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 6
+.PHONY : 6
+
+# fast build rule for target.
+6/fast:
+	$(MAKE) -f CMakeFiles/6.dir/build.make CMakeFiles/6.dir/build
+.PHONY : 6/fast
 
 1.o: 1.c.o
 
@@ -270,18 +296,74 @@ depend:
 	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/4.c.s
 .PHONY : 4.c.s
 
+5.o: 5.c.o
+
+.PHONY : 5.o
+
+# target to build an object file
+5.c.o:
+	$(MAKE) -f CMakeFiles/5.dir/build.make CMakeFiles/5.dir/5.c.o
+.PHONY : 5.c.o
+
+5.i: 5.c.i
+
+.PHONY : 5.i
+
+# target to preprocess a source file
+5.c.i:
+	$(MAKE) -f CMakeFiles/5.dir/build.make CMakeFiles/5.dir/5.c.i
+.PHONY : 5.c.i
+
+5.s: 5.c.s
+
+.PHONY : 5.s
+
+# target to generate assembly for a file
+5.c.s:
+	$(MAKE) -f CMakeFiles/5.dir/build.make CMakeFiles/5.dir/5.c.s
+.PHONY : 5.c.s
+
+6.o: 6.c.o
+
+.PHONY : 6.o
+
+# target to build an object file
+6.c.o:
+	$(MAKE) -f CMakeFiles/6.dir/build.make CMakeFiles/6.dir/6.c.o
+.PHONY : 6.c.o
+
+6.i: 6.c.i
+
+.PHONY : 6.i
+
+# target to preprocess a source file
+6.c.i:
+	$(MAKE) -f CMakeFiles/6.dir/build.make CMakeFiles/6.dir/6.c.i
+.PHONY : 6.c.i
+
+6.s: 6.c.s
+
+.PHONY : 6.s
+
+# target to generate assembly for a file
+6.c.s:
+	$(MAKE) -f CMakeFiles/6.dir/build.make CMakeFiles/6.dir/6.c.s
+.PHONY : 6.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... 4"
-	@echo "... 3"
-	@echo "... edit_cache"
-	@echo "... 1"
 	@echo "... rebuild_cache"
 	@echo "... 2"
+	@echo "... 1"
+	@echo "... 5"
+	@echo "... 3"
+	@echo "... edit_cache"
+	@echo "... 4"
+	@echo "... 6"
 	@echo "... 1.o"
 	@echo "... 1.i"
 	@echo "... 1.s"
@@ -294,6 +376,12 @@ help:
 	@echo "... 4.o"
 	@echo "... 4.i"
 	@echo "... 4.s"
+	@echo "... 5.o"
+	@echo "... 5.i"
+	@echo "... 5.s"
+	@echo "... 6.o"
+	@echo "... 6.i"
+	@echo "... 6.s"
 .PHONY : help
 
 

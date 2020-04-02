@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dwarf/Документы/OS_TASKS/second_task/src/6.c
+fcntl.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+sys/wait.h
+-
+unistd.h
+-
+

@@ -53,18 +53,22 @@ CMAKE_BINARY_DIR = /home/dwarf/Документы/OS_TASKS/second_task/src/cmake
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/4.dir/all
-all: CMakeFiles/3.dir/all
-all: CMakeFiles/1.dir/all
 all: CMakeFiles/2.dir/all
+all: CMakeFiles/1.dir/all
+all: CMakeFiles/5.dir/all
+all: CMakeFiles/3.dir/all
+all: CMakeFiles/4.dir/all
+all: CMakeFiles/6.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/4.dir/clean
-clean: CMakeFiles/3.dir/clean
-clean: CMakeFiles/1.dir/clean
 clean: CMakeFiles/2.dir/clean
+clean: CMakeFiles/1.dir/clean
+clean: CMakeFiles/5.dir/clean
+clean: CMakeFiles/3.dir/clean
+clean: CMakeFiles/4.dir/clean
+clean: CMakeFiles/6.dir/clean
 
 .PHONY : clean
 
@@ -74,58 +78,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/4.dir
+# Target rules for target CMakeFiles/2.dir
 
 # All Build rule for target.
-CMakeFiles/4.dir/all:
-	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/depend
-	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target 4"
-.PHONY : CMakeFiles/4.dir/all
+CMakeFiles/2.dir/all:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/depend
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target 2"
+.PHONY : CMakeFiles/2.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/4.dir/rule: cmake_check_build_system
+CMakeFiles/2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/4.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/4.dir/rule
+.PHONY : CMakeFiles/2.dir/rule
 
 # Convenience name for target.
-4 : CMakeFiles/4.dir/rule
+2 : CMakeFiles/2.dir/rule
 
-.PHONY : 4
-
-# clean rule for target.
-CMakeFiles/4.dir/clean:
-	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/clean
-.PHONY : CMakeFiles/4.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/3.dir
-
-# All Build rule for target.
-CMakeFiles/3.dir/all:
-	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/depend
-	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target 3"
-.PHONY : CMakeFiles/3.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/3.dir/rule
-
-# Convenience name for target.
-3 : CMakeFiles/3.dir/rule
-
-.PHONY : 3
+.PHONY : 2
 
 # clean rule for target.
-CMakeFiles/3.dir/clean:
-	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/clean
-.PHONY : CMakeFiles/3.dir/clean
+CMakeFiles/2.dir/clean:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/clean
+.PHONY : CMakeFiles/2.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/1.dir
@@ -155,31 +132,112 @@ CMakeFiles/1.dir/clean:
 .PHONY : CMakeFiles/1.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/2.dir
+# Target rules for target CMakeFiles/5.dir
 
 # All Build rule for target.
-CMakeFiles/2.dir/all:
-	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/depend
-	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target 2"
-.PHONY : CMakeFiles/2.dir/all
+CMakeFiles/5.dir/all:
+	$(MAKE) -f CMakeFiles/5.dir/build.make CMakeFiles/5.dir/depend
+	$(MAKE) -f CMakeFiles/5.dir/build.make CMakeFiles/5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target 5"
+.PHONY : CMakeFiles/5.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/2.dir/rule: cmake_check_build_system
+CMakeFiles/5.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/2.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/5.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/2.dir/rule
+.PHONY : CMakeFiles/5.dir/rule
 
 # Convenience name for target.
-2 : CMakeFiles/2.dir/rule
+5 : CMakeFiles/5.dir/rule
 
-.PHONY : 2
+.PHONY : 5
 
 # clean rule for target.
-CMakeFiles/2.dir/clean:
-	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/clean
-.PHONY : CMakeFiles/2.dir/clean
+CMakeFiles/5.dir/clean:
+	$(MAKE) -f CMakeFiles/5.dir/build.make CMakeFiles/5.dir/clean
+.PHONY : CMakeFiles/5.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/3.dir
+
+# All Build rule for target.
+CMakeFiles/3.dir/all:
+	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/depend
+	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target 3"
+.PHONY : CMakeFiles/3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/3.dir/rule
+
+# Convenience name for target.
+3 : CMakeFiles/3.dir/rule
+
+.PHONY : 3
+
+# clean rule for target.
+CMakeFiles/3.dir/clean:
+	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/clean
+.PHONY : CMakeFiles/3.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/4.dir
+
+# All Build rule for target.
+CMakeFiles/4.dir/all:
+	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/depend
+	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target 4"
+.PHONY : CMakeFiles/4.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/4.dir/rule
+
+# Convenience name for target.
+4 : CMakeFiles/4.dir/rule
+
+.PHONY : 4
+
+# clean rule for target.
+CMakeFiles/4.dir/clean:
+	$(MAKE) -f CMakeFiles/4.dir/build.make CMakeFiles/4.dir/clean
+.PHONY : CMakeFiles/4.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/6.dir
+
+# All Build rule for target.
+CMakeFiles/6.dir/all:
+	$(MAKE) -f CMakeFiles/6.dir/build.make CMakeFiles/6.dir/depend
+	$(MAKE) -f CMakeFiles/6.dir/build.make CMakeFiles/6.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target 6"
+.PHONY : CMakeFiles/6.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/6.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/6.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dwarf/Документы/OS_TASKS/second_task/src/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/6.dir/rule
+
+# Convenience name for target.
+6 : CMakeFiles/6.dir/rule
+
+.PHONY : 6
+
+# clean rule for target.
+CMakeFiles/6.dir/clean:
+	$(MAKE) -f CMakeFiles/6.dir/build.make CMakeFiles/6.dir/clean
+.PHONY : CMakeFiles/6.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
