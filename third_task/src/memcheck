@@ -1,0 +1,20 @@
+# Скрипт для сравнения памяти до и после выделения.
+
+rm buffer
+
+touch buffer
+chmod ++ buffer
+
+free -m >> buffer
+
+size=$1
+
+cmake-build-debug/memory-user $size  &
+
+sleep 1
+free -m >> buffer
+
+sleep 2
+killall memory-user > /dev/null
+
+free -m >> buffer

@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/memory-user.dir/memory-user.c.o  -o memory-user 
