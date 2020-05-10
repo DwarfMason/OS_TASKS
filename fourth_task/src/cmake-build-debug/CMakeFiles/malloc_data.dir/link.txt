@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/malloc_data.dir/malloc_data.c.o  -o malloc_data 

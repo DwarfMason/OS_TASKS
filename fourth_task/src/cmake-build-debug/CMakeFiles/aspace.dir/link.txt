@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/aspace.dir/aspace.c.o  -o aspace 

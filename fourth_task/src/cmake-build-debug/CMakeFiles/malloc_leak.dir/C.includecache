@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dwarf/Документы/OS_TASKS/fourth_task/src/malloc_leak.c
+stdio.h
+/home/dwarf/Документы/OS_TASKS/fourth_task/src/stdio.h
+stdlib.h
+/home/dwarf/Документы/OS_TASKS/fourth_task/src/stdlib.h
+
