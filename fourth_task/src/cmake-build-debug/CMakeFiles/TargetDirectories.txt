@@ -1,8 +1,0 @@
-/home/dwarf/Документы/OS_TASKS/fourth_task/src/cmake-build-debug/CMakeFiles/deleted_array.dir
-/home/dwarf/Документы/OS_TASKS/fourth_task/src/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/dwarf/Документы/OS_TASKS/fourth_task/src/cmake-build-debug/CMakeFiles/aspace.dir
-/home/dwarf/Документы/OS_TASKS/fourth_task/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/dwarf/Документы/OS_TASKS/fourth_task/src/cmake-build-debug/CMakeFiles/malloc_data.dir
-/home/dwarf/Документы/OS_TASKS/fourth_task/src/cmake-build-debug/CMakeFiles/example_2.dir
-/home/dwarf/Документы/OS_TASKS/fourth_task/src/cmake-build-debug/CMakeFiles/malloc_leak.dir
-/home/dwarf/Документы/OS_TASKS/fourth_task/src/cmake-build-debug/CMakeFiles/null.dir

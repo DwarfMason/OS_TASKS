@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/exaple_2.dir/example_2.c.o  -o exaple_2 

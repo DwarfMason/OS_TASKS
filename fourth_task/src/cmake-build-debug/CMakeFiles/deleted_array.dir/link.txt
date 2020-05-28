@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/deleted_array.dir/deleted_array.c.o  -o deleted_array 

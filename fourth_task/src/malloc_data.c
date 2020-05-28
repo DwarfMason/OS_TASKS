@@ -2,6 +2,6 @@
 
 int main(){
     int* data = malloc(100 * sizeof(int));
-    data[100] = 0;
+    data[101] = 0;
     return 0;
 }

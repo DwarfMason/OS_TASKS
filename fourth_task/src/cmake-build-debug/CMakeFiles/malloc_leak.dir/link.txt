@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/malloc_leak.dir/malloc_leak.c.o  -o malloc_leak 
