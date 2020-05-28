@@ -3,7 +3,7 @@
 #include <sys/stat.h>
 
 int main() {
-    const char *name = "test.txt"; // задаём имя файлу
+    const char *name = "CMakeLists.txt"; // задаём имя файлу
     struct stat file_stat;
     if (stat(name, &file_stat)) { // получаем описание нашего файла
         printf("Error!\n");

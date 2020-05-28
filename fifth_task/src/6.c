@@ -119,6 +119,6 @@ int print_find(char *dir, const char *name) {
 
 int main(int argc, char *argv[]) {
     //print_this_dir(*argv);
-    print_find(*argv, "1");
+    print_find(*argv, "clion-log.txt");
     return 0;
 }
