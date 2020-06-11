@@ -1,0 +1,45 @@
+Команда запуска:
+
+valgrind --tool=helgrind cmake-build-debug/main-signal
+
+
+
+Результат:
+
+...
+
+==7499== Possible data race during write of size 4 at 0x30A014 by thread #2
+
+==7499== Locks held: none
+
+==7499==    at 0x108D36: worker (main-signal.c:9)
+
+==7499==    by 0x4C36C26: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==7499==    by 0x4E496DA: start_thread (pthread_create.c:463)
+
+==7499==    by 0x518288E: clone (clone.S:95)
+
+==7499==
+
+==7499== This conflicts with a previous read of size 4 by thread #1
+
+==7499== Locks held: none
+
+==7499==    at 0x108D83: main (main-signal.c:16)
+
+==7499==  Address 0x30a014 is 0 bytes inside data symbol "done"
+
+...
+
+
+
+helgrind сообщает о возможном одновременном использовании переменной done.
+
+Такой метод ожидания потока не является эфективным, так как:
+
+может наступить чтение в мемент запеси,
+
+требует дополнительных затрат ожидающего потока.
+
+Наиболее эфективно было бы использовать мьютексы.

@@ -1,0 +1,55 @@
+Команда запуска:
+
+valgrind --tool=helgrind cmake-build-debug/main-race
+
+
+
+Результат:
+
+...
+
+==4862== Possible data race during read of size 4 at 0x30A014 by thread #1
+
+==4862== Locks held: none
+
+==4862==    at 0x108D27: main (main-race.c:15)
+
+==4862==
+
+==4862== This conflicts with a previous write of size 4 by thread #2
+
+==4862== Locks held: none
+
+==4862==    at 0x108CDF: worker (main-race.c:8)
+
+==4862==    by 0x4C36C26: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==4862==    by 0x4E496DA: start_thread (pthread_create.c:463)
+
+==4862==    by 0x518288E: clone (clone.S:95)
+
+==4862==  Address 0x30a014 is 0 bytes inside data symbol "balance"
+
+...
+
+
+
+helgrind сообщает о том, что возможно использованние переменной balance в двух патоках параллельно.
+
+
+
+Решение проблемы:
+
+Блокировать незащищенный процесс
+
+заменить
+
+  balance++;
+
+на:
+
+  Pthread_mutex_lock(&m); // блокировка мютекса
+
+  balance++; // unprotected access
+
+  Pthread_mutex_unlock(&m); // разблокировка

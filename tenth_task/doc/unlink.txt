@@ -1,0 +1,7 @@
+С операцией чтения ни чего не произошло (она завершилась успешно), так как согласно документации:
+
+
+
+if any process has the file open when this happens, deletion is postponed until all processes have closed the file.
+
+(https://www.gnu.org/software/libc/manual/html_node/Deleting-Files.html#Deleting-Files)

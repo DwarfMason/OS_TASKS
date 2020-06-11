@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.17)
+project(src C)
+
+set(CMAKE_C_STANDARD 99)
+
+find_package (Threads)
+add_executable(main-race main-race.c mythread.h)
+add_executable(main-deadlock main-deadlock.c mythread.h)
+add_executable(main-deadlock-global main-deadlock-global.c mythread.h)
+target_link_libraries (main-race ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries (main-deadlock ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries (main-deadlock-global ${CMAKE_THREAD_LIBS_INIT})
+add_executable(main-signal main-signal.c mythread.h)
+target_link_libraries (main-signal ${CMAKE_THREAD_LIBS_INIT})
+add_executable(main-signal-cv main-signal-cv.c mythread.h)
+target_link_libraries (main-signal-cv ${CMAKE_THREAD_LIBS_INIT})

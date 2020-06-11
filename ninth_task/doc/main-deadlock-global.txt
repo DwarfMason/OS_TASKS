@@ -1,0 +1,117 @@
+Команда запуска:
+
+valgrind --tool=helgrind cmake-build-debug/main-deadlock-global
+
+
+
+Результат:
+
+...
+
+==7133== Thread #3: lock order "0x30A080 before 0x30A0C0" violated
+
+==7133==
+
+==7133== Observed (incorrect) order is: acquisition of lock at 0x30A0C0
+
+==7133==    at 0x4C3403C: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==7133==    by 0x108AD7: Pthread_mutex_lock (mythreads.h:23)
+
+==7133==    by 0x108D12: worker (main-deadlock-global.c:15)
+
+==7133==    by 0x4C36C26: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==7133==    by 0x4E496DA: start_thread (pthread_create.c:463)
+
+==7133==    by 0x518288E: clone (clone.S:95)
+
+==7133==
+
+==7133==  followed by a later acquisition of lock at 0x30A080
+
+==7133==    at 0x4C3403C: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==7133==    by 0x108AD7: Pthread_mutex_lock (mythreads.h:23)
+
+==7133==    by 0x108D1E: worker (main-deadlock-global.c:16)
+
+==7133==    by 0x4C36C26: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==7133==    by 0x4E496DA: start_thread (pthread_create.c:463)
+
+==7133==    by 0x518288E: clone (clone.S:95)
+
+==7133==
+
+==7133== Required order was established by acquisition of lock at 0x30A080
+
+==7133==    at 0x4C3403C: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==7133==    by 0x108AD7: Pthread_mutex_lock (mythreads.h:23)
+
+==7133==    by 0x108CF8: worker (main-deadlock-global.c:12)
+
+==7133==    by 0x4C36C26: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==7133==    by 0x4E496DA: start_thread (pthread_create.c:463)
+
+==7133==    by 0x518288E: clone (clone.S:95)
+
+==7133==
+
+==7133==  followed by a later acquisition of lock at 0x30A0C0
+
+==7133==    at 0x4C3403C: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==7133==    by 0x108AD7: Pthread_mutex_lock (mythreads.h:23)
+
+==7133==    by 0x108D04: worker (main-deadlock-global.c:13)
+
+==7133==    by 0x4C36C26: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==7133==    by 0x4E496DA: start_thread (pthread_create.c:463)
+
+==7133==    by 0x518288E: clone (clone.S:95)
+
+==7133==
+
+==7133==  Lock at 0x30A080 was first observed
+
+==7133==    at 0x4C3403C: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==7133==    by 0x108AD7: Pthread_mutex_lock (mythreads.h:23)
+
+==7133==    by 0x108CF8: worker (main-deadlock-global.c:12)
+
+==7133==    by 0x4C36C26: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==7133==    by 0x4E496DA: start_thread (pthread_create.c:463)
+
+==7133==    by 0x518288E: clone (clone.S:95)
+
+==7133==  Address 0x30a080 is 0 bytes inside data symbol "m1"
+
+==7133==
+
+==7133==  Lock at 0x30A0C0 was first observed
+
+==7133==    at 0x4C3403C: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==7133==    by 0x108AD7: Pthread_mutex_lock (mythreads.h:23)
+
+==7133==    by 0x108D04: worker (main-deadlock-global.c:13)
+
+==7133==    by 0x4C36C26: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==7133==    by 0x4E496DA: start_thread (pthread_create.c:463)
+
+==7133==    by 0x518288E: clone (clone.S:95)
+
+==7133==  Address 0x30a0c0 is 0 bytes inside data symbol "m2"
+
+...
+
+
+
+helgrind сообщает о аналогичной ошибке 3 заданию, тогда как она отсутствует, так как дополнительный мьютекс не допускает такую ситуацию.

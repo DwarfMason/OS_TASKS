@@ -1,0 +1,116 @@
+Команда запуска:
+
+valgrind --tool=helgrind cmake-build-debug/main-deadlock
+
+
+Результат:
+
+...
+
+==6272== Thread #3: lock order "0x30A040 before 0x30A080" violated
+
+==6272==
+
+==6272== Observed (incorrect) order is: acquisition of lock at 0x30A080
+
+==6272==    at 0x4C3403C: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==6272==    by 0x108AD7: Pthread_mutex_lock (mythreads.h:23)
+
+==6272==    by 0x108D06: worker (main-deadlock.c:13)
+
+==6272==    by 0x4C36C26: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==6272==    by 0x4E496DA: start_thread (pthread_create.c:463)
+
+==6272==    by 0x518288E: clone (clone.S:95)
+
+==6272==
+
+==6272==  followed by a later acquisition of lock at 0x30A040
+
+==6272==    at 0x4C3403C: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==6272==    by 0x108AD7: Pthread_mutex_lock (mythreads.h:23)
+
+==6272==    by 0x108D12: worker (main-deadlock.c:14)
+
+==6272==    by 0x4C36C26: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==6272==    by 0x4E496DA: start_thread (pthread_create.c:463)
+
+==6272==    by 0x518288E: clone (clone.S:95)
+
+==6272==
+
+==6272== Required order was established by acquisition of lock at 0x30A040
+
+==6272==    at 0x4C3403C: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==6272==    by 0x108AD7: Pthread_mutex_lock (mythreads.h:23)
+
+==6272==    by 0x108CEC: worker (main-deadlock.c:10)
+
+==6272==    by 0x4C36C26: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==6272==    by 0x4E496DA: start_thread (pthread_create.c:463)
+
+==6272==    by 0x518288E: clone (clone.S:95)
+
+==6272==
+
+==6272==  followed by a later acquisition of lock at 0x30A080
+
+==6272==    at 0x4C3403C: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==6272==    by 0x108AD7: Pthread_mutex_lock (mythreads.h:23)
+
+==6272==    by 0x108CF8: worker (main-deadlock.c:11)
+
+==6272==    by 0x4C36C26: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==6272==    by 0x4E496DA: start_thread (pthread_create.c:463)
+
+==6272==    by 0x518288E: clone (clone.S:95)
+
+==6272==
+
+==6272==  Lock at 0x30A040 was first observed
+
+==6272==    at 0x4C3403C: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==6272==    by 0x108AD7: Pthread_mutex_lock (mythreads.h:23)
+
+==6272==    by 0x108CEC: worker (main-deadlock.c:10)
+
+==6272==    by 0x4C36C26: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==6272==    by 0x4E496DA: start_thread (pthread_create.c:463)
+
+==6272==    by 0x518288E: clone (clone.S:95)
+
+==6272==  Address 0x30a040 is 0 bytes inside data symbol "m1"
+
+==6272==
+
+==6272==  Lock at 0x30A080 was first observed
+
+==6272==    at 0x4C3403C: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==6272==    by 0x108AD7: Pthread_mutex_lock (mythreads.h:23)
+
+==6272==    by 0x108CF8: worker (main-deadlock.c:11)
+
+==6272==    by 0x4C36C26: ??? (in /usr/lib/valgrind/vgpreload_helgrind-amd64-linux.so)
+
+==6272==    by 0x4E496DA: start_thread (pthread_create.c:463)
+
+==6272==    by 0x518288E: clone (clone.S:95)
+
+==6272==  Address 0x30a080 is 0 bytes inside data symbol "m2"
+
+...
+
+
+
+helgrind сообщает о том, что блокировка мьютексов происходит в неправильном порядке.
