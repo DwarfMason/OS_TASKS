@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dwarf/Документы/OS_TASKS/eighth_task/src/server.c
+stdio.h
+-
+netinet/in.h
+-
+stdlib.h
+-
+string.h
+-
+sys/socket.h
+-
+sys/types.h
+-
+zconf.h
+-
+fcntl.h
+-
+sys/stat.h
+-
+signal.h
+-
+time.h
+-
+f2fs_fs.h
+-
+

@@ -1,0 +1,4 @@
+/home/dwarf/Документы/OS_TASKS/eighth_task/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dwarf/Документы/OS_TASKS/eighth_task/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dwarf/Документы/OS_TASKS/eighth_task/src/cmake-build-debug/CMakeFiles/server.dir
+/home/dwarf/Документы/OS_TASKS/eighth_task/src/cmake-build-debug/CMakeFiles/client.dir

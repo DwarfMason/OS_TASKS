@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dwarf/Документы/OS_TASKS/eighth_task/src/client.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+sys/socket.h
+-
+zconf.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+
