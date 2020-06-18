@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/check-xor.dir/check-xor.c.o  -o check-xor 

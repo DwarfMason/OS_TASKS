@@ -1,0 +1,7 @@
+/home/dwarf/Документы/OS_TASKS/sixth_task/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dwarf/Документы/OS_TASKS/sixth_task/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dwarf/Документы/OS_TASKS/sixth_task/src/cmake-build-debug/CMakeFiles/check-xor.dir
+/home/dwarf/Документы/OS_TASKS/sixth_task/src/cmake-build-debug/CMakeFiles/create-csum.dir
+/home/dwarf/Документы/OS_TASKS/sixth_task/src/cmake-build-debug/CMakeFiles/check-csum.dir
+/home/dwarf/Документы/OS_TASKS/sixth_task/src/cmake-build-debug/CMakeFiles/check-fletcher.dir
+/home/dwarf/Документы/OS_TASKS/sixth_task/src/cmake-build-debug/CMakeFiles/crc.dir

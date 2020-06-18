@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/check-csum.dir/check-csum.c.o  -o check-csum 

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dwarf/Документы/OS_TASKS/sixth_task/src/check-xor.c
+stdio.h
+-
+stdlib.h
+-
+fcntl.h
+-
+unistd.h
+-
+common.h
+/home/dwarf/Документы/OS_TASKS/sixth_task/src/common.h
+
+/home/dwarf/Документы/OS_TASKS/sixth_task/src/common.h
+stdio.h
+-
+sys/time.h
+-
+assert.h
+-
+

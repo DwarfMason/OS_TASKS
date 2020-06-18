@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dwarf/Документы/OS_TASKS/sixth_task/src/common.h
+stdio.h
+-
+sys/time.h
+-
+assert.h
+-
+
+/home/dwarf/Документы/OS_TASKS/sixth_task/src/create-csum.c
+stdio.h
+-
+stdlib.h
+-
+fcntl.h
+-
+unistd.h
+-
+sys/types.h
+-
+common.h
+/home/dwarf/Документы/OS_TASKS/sixth_task/src/common.h
+
