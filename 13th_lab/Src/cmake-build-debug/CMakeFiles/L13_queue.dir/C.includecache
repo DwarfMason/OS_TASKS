@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dwarf/Документы/OS_TASKS/13th_lab/Src/queue.c
+utils.h
+/home/dwarf/Документы/OS_TASKS/13th_lab/Src/utils.h
+assert.h
+-
+pthread.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+
+/home/dwarf/Документы/OS_TASKS/13th_lab/Src/utils.h
+pthread.h
+-
+

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="L13"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L13_mutex">
+				<Option output="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/L13_mutex" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 L13_mutex"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L13_mutex/fast">
+				<Option output="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/L13_mutex" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 L13_mutex/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L13_cond">
+				<Option output="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/L13_cond" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 L13_cond"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L13_cond/fast">
+				<Option output="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/L13_cond" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 L13_cond/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L13_queue">
+				<Option output="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/L13_queue" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 L13_queue"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L13_queue/fast">
+				<Option output="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/L13_queue" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 L13_queue/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/queue.c">
+			<Option target="L13_queue"/>
+		</Unit>
+		<Unit filename="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/queue_cond.c">
+			<Option target="L13_cond"/>
+		</Unit>
+		<Unit filename="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/queue_mutex.c">
+			<Option target="L13_mutex"/>
+		</Unit>
+		<Unit filename="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/utils.c">
+			<Option target="L13_mutex"/>
+			<Option target="L13_cond"/>
+			<Option target="L13_queue"/>
+		</Unit>
+		<Unit filename="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/utils.h">
+			<Option target="L13_mutex"/>
+			<Option target="L13_cond"/>
+			<Option target="L13_queue"/>
+		</Unit>
+		<Unit filename="/home/dwarf/Документы/OS_TASKS/13th_lab/Src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

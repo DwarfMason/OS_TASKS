@@ -1,0 +1,60 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c3180/fast && /usr/bin/make  -f CMakeFiles/cmTC_c3180.dir/build.make CMakeFiles/cmTC_c3180.dir/build
+make[1]: вход в каталог «/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_c3180.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c3180.dir/src.c.o   -c /home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c3180
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3180.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_c3180.dir/src.c.o  -o cmTC_c3180 
+/usr/bin/ld: CMakeFiles/cmTC_c3180.dir/src.c.o: в функции «main»:
+src.c:(.text+0x3e): неопределённая ссылка на «pthread_create»
+/usr/bin/ld: src.c:(.text+0x4a): неопределённая ссылка на «pthread_detach»
+/usr/bin/ld: src.c:(.text+0x56): неопределённая ссылка на «pthread_cancel»
+/usr/bin/ld: src.c:(.text+0x67): неопределённая ссылка на «pthread_join»
+collect2: ошибка: выполнение ld завершилось с кодом возврата 1
+make[1]: *** [CMakeFiles/cmTC_c3180.dir/build.make:107: cmTC_c3180] Ошибка 1
+make[1]: выход из каталога «/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/CMakeFiles/CMakeTmp»
+make: *** [Makefile:141: cmTC_c3180/fast] Ошибка 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_08b8d/fast && /usr/bin/make  -f CMakeFiles/cmTC_08b8d.dir/build.make CMakeFiles/cmTC_08b8d.dir/build
+make[1]: вход в каталог «/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_08b8d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_08b8d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_08b8d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08b8d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_08b8d.dir/CheckFunctionExists.c.o  -o cmTC_08b8d  -lpthreads 
+/usr/bin/ld: невозможно найти -lpthreads
+collect2: ошибка: выполнение ld завершилось с кодом возврата 1
+make[1]: *** [CMakeFiles/cmTC_08b8d.dir/build.make:107: cmTC_08b8d] Ошибка 1
+make[1]: выход из каталога «/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/CMakeFiles/CMakeTmp»
+make: *** [Makefile:141: cmTC_08b8d/fast] Ошибка 2
+
+
+

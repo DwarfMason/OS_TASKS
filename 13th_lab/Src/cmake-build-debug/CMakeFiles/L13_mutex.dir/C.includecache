@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dwarf/Документы/OS_TASKS/13th_lab/Src/queue_mutex.c
+stdio.h
+-
+stdlib.h
+-
+assert.h
+-
+pthread.h
+-
+unistd.h
+-
+utils.h
+/home/dwarf/Документы/OS_TASKS/13th_lab/Src/utils.h
+
+/home/dwarf/Документы/OS_TASKS/13th_lab/Src/utils.c
+stdio.h
+-
+stdlib.h
+-
+pthread.h
+-
+utils.h
+/home/dwarf/Документы/OS_TASKS/13th_lab/Src/utils.h
+
+/home/dwarf/Документы/OS_TASKS/13th_lab/Src/utils.h
+pthread.h
+-
+

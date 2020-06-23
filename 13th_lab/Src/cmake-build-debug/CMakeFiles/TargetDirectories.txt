@@ -1,0 +1,5 @@
+/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/CMakeFiles/L13_mutex.dir
+/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/CMakeFiles/L13_cond.dir
+/home/dwarf/Документы/OS_TASKS/13th_lab/Src/cmake-build-debug/CMakeFiles/L13_queue.dir

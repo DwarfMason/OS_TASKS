@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/L13_queue.dir/queue.o CMakeFiles/L13_queue.dir/utils.o  -o L13_queue  -lpthread 
